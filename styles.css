@@ -44,6 +44,7 @@ nav{
     
 }
 .logo img{
+  
   height: 25px;
   position: absolute;
   top: 40%;
@@ -82,6 +83,7 @@ header ul li a:hover{
 }
 .high{
     color:rgb(255, 2, 2);
+    letter-spacing: 2px;
 }
 
 
@@ -130,6 +132,7 @@ p {
   /* background: linear-gradient(60deg, rgb(183, 228, 255) 0%, rgb(218, 253, 255) 100%); */
   background: linear-gradient(60deg, rgb(190, 208, 251) 0%, rgb(31, 234, 234) 100%);
   color:rgb(255, 255, 255);
+  
 }
 
 .inner-header {
@@ -137,6 +140,7 @@ p {
   width:100%;
   margin: 0;
   padding: 0;
+  
 }
 
 .flex { /*Flexbox for containers*/
@@ -160,6 +164,7 @@ p {
   height:20vh;
   text-align:center;
   background-color: rgb(255, 255, 255);
+  overflow-y: hidden;
 }
 
 /* Animation */
@@ -192,18 +197,7 @@ p {
   }
 }
 /*Shrinking for mobile*/
-@media (max-width: 768px) {
-  .waves {
-    height:40px;
-    min-height:40px;
-  }
-  .content {
-    height:30vh;
-  }
-  h1 {
-    font-size:24px;
-  }
-}
+
  
 .info-container{
     position: relative;
@@ -413,10 +407,10 @@ h1{
 
 .projects-section .img{
   position: relative;
-  width:27%;
+  width:22%;
   height: 300px;
   border-radius: 15px;
-  background-color: #f8fff3;
+  background-color: #fdfffb;
   top: 10%;
   left: 17%;
   transition: 0.5s;
@@ -479,7 +473,7 @@ h1{
 
 .projects-section .img2{
   position: relative;
-  width:27%;
+  width:23%;
   height: 300px;
   border-radius: 15px;
   background-color: #fff5fd;
@@ -518,21 +512,124 @@ h1{
 
 
 
-
-
-
-
-
-@media(max-width: 767px){
-
+@media (max-width: 768px) {
+  *{
+    overflow-x: hidden;
+  }
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
 }
 
 
-@media(max-width: 375px){
+
+
+@media(max-width: 425px){
+    *{
+      overflow-x: hidden;
+    }
+    .logo img{
+      display: none;
+    }
     header ul li a{
         font-size: 10px;
     }
     header ul{
-        margin: 20px ;
+        float: left;
+        margin-left: 18px ;
     }
+    .info-container{
+      top: 10%;
+      width: 800%;
+      
+      left: 10%;
+      align-items: center;
+      background-color: #24242400;
+    }
+
+    .info-container .name{
+      font-size: 30px;
+      margin-left: 10px;
+      float: none;
+    }
+    .name1{
+      float: none;
+      font-size: 60px;
+      z-index: 100;
+      left: 0%;
+      
+    }
+    .info-container .designation{
+      left: 2%;
+      font-size: 30px;
+
+    }
+    .cv{
+        top: 55%;
+        float: none;
+        left: 20%;
+        margin-top: 40px;
+    }
+    .skills{
+      width: 350px;
+      float: none;
+      left: 0%;
+    }
+
+    .projects-section{
+
+      height: 1800px;
+    }
+
+
+    .projects-section .project1{
+      display: inline-block;
+      height: 700px;
+      width: 90%;
+      top: 0%;
+      left:5%;
+      
+    }
+    .projects-section .img{
+      width: 90%;
+      left: 5%;
+      margin-top: 20px;
+
+      
+    }
+    .projects-section .details{
+      width: 90%;
+      left:5%;
+      overflow-y: hidden;
+      
+    }
+
+
+    .projects-section .project2{
+      display: inline-block;
+      top: 0%;
+      height: 700px;
+      width: 100%;
+      left: 5%;
+    }
+
+    .projects-section .img2{
+      width: 80%;
+      margin-left: 00px;
+    }
+    .projects-section .Pro2-details{
+      margin-top: 20px;
+      width: 85%;
+      left: 5%;
+      overflow-y: hidden;
+    }
+    
+   
 }
